@@ -1,0 +1,15 @@
+<div ng-controller="message_ctrl">
+  <h1>Wumail Massages Page</h1>
+  <div>
+    <h3>{{name}}, welcome!</h3>
+    <a href="#/profile">Profile</a>&nbsp
+    <a href="#/message">Messages</a>&nbsp
+    <a href="#/login">Logout</a>
+  </div>
+  <div>
+    <table style="border:1px solid; border-collapse: collapse">
+      <tr style="border:1px solid"><td style="border:1px solid">Sender</td><td style="border:1px solid">Title</td></tr>
+      <tr ng-click="show(x,$index)" style="border:1px solid" ng-repeat="x in message"><td style="border:1px solid">{{x.sender}}</td><td style="border:1px solid">{{x.title}}</td></tr>
+    </table>
+  </div>
+</div>

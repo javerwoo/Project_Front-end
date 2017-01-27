@@ -1,0 +1,36 @@
+<!--<!DOCTYPE html>-->
+<!--<html ngapp="myapp" ng-controller="message_detail_ctrl">-->
+<!--<head>-->
+<!--	<title>message_detail</title>-->
+<!--	<script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>-->
+<!--	<script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>-->
+<!--	<script src="script.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<div ng-controller="message_detail_ctrl">
+  <div>
+    <h1>Wumail Message Detail Page</h1>
+  </div>
+  <div>
+    <h3>{{name}}, welcome!</h3>
+    <a ng-click='delete()' href="#/message">Delete</a>&nbsp
+    <a href="#/message">Back to messages</a>&nbsp
+  </div>
+  <div>
+    <table id='message_detail_table'>
+      <tr><td>recipient</td><td>{{recipient}}</td></tr>
+      <tr><td>recipient_img</td><td><img src='{{recipient_img}}' height='4%' width='4%'/></td></tr>
+      <tr><td>sender</td><td>{{sender}}</td></tr>
+      <tr><td>sender_img</td><td><img src='{{sender_img}}' height='4%' width='4%'/></td></tr>
+      <tr><td>title</td><td>{{title}}</td></tr>
+      <tr><td>description</td><td>{{description}}</td></tr>
+      <tr><td>created_at</td><td>{{created_at}}</td></tr>
+      <tr><td>important</td><td>{{important}} &nbsp &nbsp &nbsp &nbsp<button ng-click='ifImportant()'>Important?</button></td></tr>
+      
+    </table>
+    <p style="border:1px solid" ng-repeat='reply in reply_arr track by $index'>{{reply}}</p>
+    <input type="text" ng-model='replyMessage'/><button ng-click='reply()'>Reply</button>
+  </div>
+</div>
+<!--</body>-->
+<!--</html>-->

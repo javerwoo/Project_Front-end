@@ -1,0 +1,14 @@
+<div ng-controller="login_ctrl">
+	<h1>Wumail Login Page</h1>
+	<div>
+		Username: <input type="text" placeholder="Username" ng-model="username">
+		<p ng-hide="username_alert" ng-init="username_alert=true" style="color: red">You must have a username!</p>
+	</div><br>	
+	<div>
+		Password: <input type="text" placeholder="Password" ng-model="password">
+		<p ng-hide="password_alert" ng-init="password_alert=true" style="color: red">You must have a password!</p>
+	</div><br>		
+	<div>
+		<button ng-click="login()">Login</button>&nbsp &nbsp<a href="#/signUp">Sign up</a>
+	</div>
+</div>

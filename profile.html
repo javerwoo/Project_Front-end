@@ -1,0 +1,23 @@
+<div ng-controller= 'profile_ctrl'>
+	<h1>Wumail Profile Page</h1>
+	<div>
+  <h3>{{name}}, welcome!</h3>
+  <a href="#/profile">Profile</a>&nbsp
+  <a href="#/message">Messages</a>&nbsp
+  <a href="#/login">Logout</a>
+</div>
+<div>
+  <table style="border:1px solid">
+    <tr><td>Username</td><td class="info"><input type="text" ng-model="username" readonly></td></tr>
+    <tr><td>Password</td><td class="info"><input type="text" ng-model="password"></td></tr>
+    <tr><td>Firstname</td><td class="info"><input type="text" ng-model="firstname"></td></tr>
+    <tr><td>Lastname</td><td class="info"><input type="text" ng-model="lastname"></td></tr>
+    <tr><td>Email</td><td class="info"><input type="text" ng-model="email"></td></tr>
+    <tr><td>Phone</td><td class="info"><input type="text" ng-model="phone"></td></tr>
+    <tr><td>Location</td><td class="info"><input type="text" ng-model="location"></td></tr>
+  </table>
+</div>
+<div>
+  <button ng-click="update()">Update</button>
+</div>
+</div>
